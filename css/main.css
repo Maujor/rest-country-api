@@ -6,6 +6,7 @@
   --text-color: hsl(200, 15%, 8%);
   --box-shadow: hsl(0, 2%, 67%);
   --fs-fontsize: 1.6rem;
+  --link-footer: hsl(0, 100%, 33%);
 }
 
 .dark {
@@ -14,6 +15,7 @@
   --bg-input: hsl(209, 23%, 22%);
   --text-color: hsl(0, 0%, 100%);
   --box-shadow: hsl(0, 0%, 50%);
+  --link-footer: hsl(120, 100%, 36%);
 }
 
 html {
