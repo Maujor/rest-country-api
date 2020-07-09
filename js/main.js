@@ -156,7 +156,7 @@ goSearch.addEventListener("click", (e) => {
 showHomeContent = (allCountryData) => {
   const sectionHomeContent = document.querySelector("#home-content");
   const templateHome = allCountryData.map((el) => {
-    return `<button class="country-container btn" data-name="${el.name}">
+    return `<div class="country-container btn" data-name="${el.name}">
                 <img src="${el.flag}" alt="${el.name} flag" />
                 <span style="display: block" class="country">
                     <h3>${el.name}</h3>
@@ -166,7 +166,7 @@ showHomeContent = (allCountryData) => {
                       <li><span class="bold">Capital:</span> ${el.capital}</li>
                     </ul>
                   </span>
-                  </button>`;
+                  </div>`;
   }).join("");
   sectionHomeContent.innerHTML = templateHome;
 };
