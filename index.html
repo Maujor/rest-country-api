@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Rest Coutries API with color theme switcher</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1>Where in the world?</h1>
+      <button id="theme-switcher"><span><img src="icon/icon-moon.png" alt="icon dark theme"></span> Dark mode</button>
+    </header>
+    <aside class="input-area">
+      <form autocomplete="off" class="search-form">
+        <div class="autocomplete">
+          <label for="search-country" aria-hidden="true" aria-label="Search">Search</label>
+          <input id="search-country" class="btn" type="search" placeholder="Search for a country...">
+        </div>
+        <input type="submit" id="go-search" value="" aria-label="Submit">
+      </form>
+      <div class="dropdown">
+        <div class="btn region-container">Filter by Region</div>
+        <ul class="btn region-content">
+          <li class="region-button" data-region="africa">Africa</li>
+          <li class="region-button" data-region="americas">Americas</li>
+          <li class="region-button" data-region="asia">Asia</li>
+          <li class="region-button" data-region="europe">Europe</li>
+          <li class="region-button" data-region="oceania">Oceania</li>
+        </ul>
+      </div>
+    </aside>
+    <main class="main">
+      <section class="page" id="home-page">
+        <h2 aria-hidden="true">Home Page</h2>
+        <div id="spinner"><img src="icon/spinner.gif" alt="Loading" /></div>
+        <div id="home-content"></div>
+      </section>
+      <section class="page" id="details-page">
+        <h2 aria-hidden="true">Country details</h2>
+        <aside>
+          <button id="btn-back" class="btn"><img src="icon/icon-arrow.png" alt="left arrow">&nbsp;&nbsp;&nbsp;
+            Back</button>
+        </aside>
+        <div class="grid" id="detail-content"></div> <!-- /.grid -->
+      </section>
+    </main><!-- /.main -->
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel="noopener" target="_blank">Frontend
+        Mentor</a>.
+      Coded with &hearts; by <a href="https://maujor.com" rel="noopener" target="_blank">Maujor</a>.
+    </footer>
+  </div> <!-- /.wrapper -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
