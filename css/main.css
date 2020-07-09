@@ -46,7 +46,7 @@ body {
 
 .attribution a,
 .attribution a:visited {
-  color: hsl(0, 100%, 50%);
+  color: var(--link-footer);
 }
 
 .attribution a:hover {
