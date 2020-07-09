@@ -158,14 +158,14 @@ showHomeContent = (allCountryData) => {
   const templateHome = allCountryData.map((el) => {
     return `<button class="country-container btn" data-name="${el.name}">
                 <img src="${el.flag}" alt="${el.name} flag" />
-                  <div class="country">
+                <span style="display: block" class="country">
                     <h3>${el.name}</h3>
                     <ul>
                       <li><span class="bold">Population:</span> ${el.population.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}</li>
                       <li><span class="bold">Region:</span> ${el.region}</li>
                       <li><span class="bold">Capital:</span> ${el.capital}</li>
                     </ul>
-                  </div>
+                  </span>
                   </button>`;
   }).join("");
   sectionHomeContent.innerHTML = templateHome;
